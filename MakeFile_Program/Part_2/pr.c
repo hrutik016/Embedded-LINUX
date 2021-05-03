@@ -3,6 +3,8 @@
 
 void print(int ch)
 {
-	printf("Result is : %d", ch);
+
+	printf("%s", __func__);
+	printf("Result is : %d \n\n\n", ch);
 }
 
