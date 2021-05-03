@@ -1,0 +1,24 @@
+#primary target
+
+App: main.c add.c pr.c
+	gcc -Desktop/Linux/EL_Practicals/MakeFile_Program/Part_2./ main.c add.c pr.c -o App
+	@echo "App binary generated"
+
+#suppementry target
+
+main.o: main.c
+	gcc -Desktop/Linux/El_Practicals/Makefile_Program/Part_2./ -c main.c -o main.o
+	@echo "App binary generated"
+
+add.o: add.c
+	gcc -Desktop/Linux/EL_Practicals/Makefile_Program/Part_2./ -c add.c -o add.o
+	@echo "add.o generated"
+
+pr.o: pr.c
+	gcc -Desktop/Linux/EL_Practicals/Makefile_Program/Part_2./ -c pr.c -o pr.o
+	@echo "pr.o generated"
+
+clean: 
+	rm -rf *.o App
+	@echo "Removed binaries, source tree reset"
+
