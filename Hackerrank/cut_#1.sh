@@ -1,4 +1,4 @@
-# it returns 3rd character of every word
+# it should return 3rd character of every word
 
 while read line
 do
